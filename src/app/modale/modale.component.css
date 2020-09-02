@@ -1,0 +1,22 @@
+.modal-header{
+  color: midnightblue;
+  justify-content: center;
+}
+
+.modal-body{
+  color: midnightblue;
+}
+
+.modal-footer{
+  color: midnightblue;
+}
+
+button{
+  background-color: #007bff ;
+  color: white;
+}
+
+.formContent{
+  padding: 15px;
+  border: 1px solid lightgrey;
+}

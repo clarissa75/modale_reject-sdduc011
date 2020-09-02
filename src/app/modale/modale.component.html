@@ -1,0 +1,59 @@
+<div class="modal-header">
+  <b> DATI REJECT</b>
+</div>
+<div class="modal-body">
+  <small> Si vuole procedere con il reject degli SDD selezionati?</small>
+  <div>
+  <small> La causale e l'eventuale nota inserita verranno associati a tutti gli elementi selezionati;
+     le commissioni applicate a ciascun elemento potrebbero invece essere diverse</small>
+  </div>
+</div>
+<div class="formContent">
+  <div class="form-group row">
+    <label for="" class="col-2"> Causale </label>
+    <div class="col-5">
+      <select class="form-control form-control-sm"  required>
+        <option value="Conto errato">Conto errato</option>
+        <option value="Conto chiuso">Conto chiuso</option>
+        <option value="Conto bloccato">Conto bloccato</option>
+        <option value="Conto consumatore">Conto consumatore</option>
+        <option value="Transazione non ammessa">Transazione non ammessa</option>
+        <option value="Fondi insufficienti">Fondi insufficienti</option>
+        <option value="Duplicazione">Duplicazione</option>
+        <option value="ID creditore non riconosciuto">ID creditore non riconosciuto</option>
+        <option value="Mandato assente o invalido">Mandato assente o invalido</option>
+        <option value="Mandato non riconosciuto">Mandato non riconosciuto</option>
+        <option value="Revoca del singolo SDD">Revoca del singolo SDD</option>
+        <option value="Motivo non specificato">Motivo non specificato</option>
+        <option value="Causale libera">Causale libera</option>
+        <option value="Banca non raggiungibile">Banca non raggiungibile</option>
+        <option value="BIC banca errato">BIC banca errato</option>
+        <option value="Coordinate bancarie errate">Coordinate bancarie errate</option>
+      </select>
+    </div>
+    <label for="" class="col-2"> Data </label>
+  <div class="col-2">
+  <input [value]="currentDate" type="text"  readonly>
+  <div class="col-1"></div>
+  </div>
+</div>
+
+<div class="form-group row">
+ <label for="" class="col-2">Nota interna</label>
+ <textarea class="col-9" rows="" cols="" ></textarea>
+ <div class="col-1"></div>
+</div>
+<div class="form-group row">
+ <label for=""class="col-2">Nota</label>
+ <textarea class="col-9" rows="" cols="" required></textarea>
+ <div class="col-1"></div>
+</div>
+</div>
+<div class="modal-footer">
+  <div class="row">
+  <div class="col-6"><button type="button" class="btn btn-primary ngp-button" (click)="closeModal()"><b>Annulla </b></button></div>
+  <div class="col-6 text-right"><button type="button"class="btn btn-primary ngp-button"><b>Conferma </b></button></div>
+  </div>
+
+</div>
+
